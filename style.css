@@ -1,0 +1,174 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FFFF00; 
+    color: #000000;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000033;
+}
+
+.logo-box {
+    border: 2px solid #FFFFFF;
+    padding: 5px 15px;
+}
+
+.logo-text {
+    color: #FFFF00;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #FF007F;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.avatar-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #3366FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(51, 102, 255, 0.7);
+}
+
+.avatar i {
+    font-size: 80px;
+    color: #FFFFFF;
+}
+
+.intro-section {
+    margin-top: 20px;
+}
+
+.greeting {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.my-name {
+    color: #FF007F;
+    font-size: 36px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.role {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.social-section {
+    margin-top: 30px;
+}
+
+.connect-text {
+    color: #E60000;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #000000;
+    font-size: 35px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #FF007F;
+}
+
+.contact-section {
+    margin-top: 40px;
+}
+
+.contact-title {
+    color: #000000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-title span {
+    color: #E60000;
+}
+
+.form-container {
+    background-color: #0B132B;
+    border: 3px solid #E60000;
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #A0AEC0;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-container input, 
+.form-container textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: transparent;
+    border: 2px solid #3366FF;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-container input::placeholder, 
+.form-container textarea::placeholder {
+    color: #5A6978;
+}
+
+.form-container input:focus, 
+.form-container textarea:focus {
+    border-color: #FF007F;
+}
+Use code with caution.
