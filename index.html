@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audumbar's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-</head >
+</head>
 <body>
-
     <div class="theme-container">
         <button id="theme-toggle">🌙 Dark Mode</button>
     </div>
-
     <div class="profile-container">
         <div class="profile-pic"></div>
         <p class="greeting">Hey, It's</p>
@@ -19,40 +17,32 @@
         <p class="subtitle">I am a MERN Developer | Always learning and building</p>
         <a href="#" class="connect-link">Connect with me</a>
     </div>
-
     <div class="contact-section">
         <h2>Contact <span class="me-text">Me</span></h2>
-        
         <form class="contact-form">
             <div class="form-group">
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name">
             </div>
-            
             <div class="form-group">
                 <label>Mobile number</label>
                 <input type="tel" placeholder="Enter your mobile number">
             </div>
-            
             <div class="form-group">
                 <label>Email</label>
                 <input type="email" placeholder="Enter your email">
             </div>
-            
             <div class="form-group">
                 <label>Your Suggestion for me</label>
                 <textarea rows="4" placeholder="Enter your Suggestion"></textarea>
             </div>
         </form>
     </div>
-
     <script>
         const themeToggleBtn = document.getElementById('theme-toggle');
         const bodyElement = document.body;
-
         themeToggleBtn.addEventListener('click', () => {
             bodyElement.classList.toggle('dark-mode');
-            
             if (bodyElement.classList.contains('dark-mode')) {
                 themeToggleBtn.textContent = '☀️ Light Mode';
             } else {
