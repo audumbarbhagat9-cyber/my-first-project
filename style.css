@@ -1,4 +1,4 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,169 +6,127 @@
 }
 
 body {
-    background-color: #FFFF00; 
+    background-color: #ffff00;
     color: #000000;
-    min-height: 100vh;
-    padding-bottom: 50px;
-}
-
-.navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #000033;
-}
-
-.logo-box {
-    border: 2px solid #FFFFFF;
-    padding: 5px 15px;
-}
-
-.logo-text {
-    color: #FFFF00;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.nav-links a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 16px;
-}
-
-.nav-links a:hover {
-    color: #FF007F;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
     padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+.theme-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 600px;
+}
+
+#theme-toggle {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.profile-container {
     text-align: center;
-}
-
-.avatar-container {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-.avatar {
-    width: 150px;
-    height: 150px;
-    background-color: #3366FF;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px rgba(51, 102, 255, 0.7);
-}
-
-.avatar i {
-    font-size: 80px;
-    color: #FFFFFF;
-}
-
-.intro-section {
     margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    background-color: #2b57ff;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
 }
 
 .greeting {
-    color: #000000;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.my-name {
-    color: #FF007F;
-    font-size: 36px;
-    margin: 10px 0;
+.name {
+    color: #d11a2a;
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.subtitle {
+    font-size: 14px;
     font-weight: bold;
-}
-
-.role {
-    color: #000000;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.social-section {
-    margin-top: 30px;
-}
-
-.connect-text {
-    color: #E60000;
-    font-size: 22px;
     margin-bottom: 15px;
 }
 
-.social-icons a {
-    color: #000000;
-    font-size: 35px;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #FF007F;
+.connect-link {
+    color: #d11a2a;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .contact-section {
-    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
 }
 
-.contact-title {
-    color: #000000;
-    font-size: 28px;
-    margin-bottom: 20px;
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
-.contact-title span {
-    color: #E60000;
+.me-text {
+    color: #d11a2a;
 }
 
-.form-container {
-    background-color: #0B132B;
-    border: 3px solid #E60000;
-    border-radius: 30px;
-    padding: 40px;
-    max-width: 500px;
-    margin: 0 auto;
+.contact-form {
+    background-color: #0d1117;
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid #d11a2a;
     text-align: left;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .form-group label {
     display: block;
-    color: #A0AEC0;
-    font-size: 14px;
-    margin-bottom: 8px;
+    color: #8b949e;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
-.form-container input, 
-.form-container textarea {
+.form-group input, .form-group textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 10px;
     background-color: transparent;
-    border: 2px solid #3366FF;
-    border-radius: 15px;
-    color: #FFFFFF;
-    font-size: 16px;
-    outline: none;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
 }
 
-.form-container input::placeholder, 
-.form-container textarea::placeholder {
-    color: #5A6978;
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
-.form-container input:focus, 
-.form-container textarea:focus {
-    border-color: #FF007F;
+body.dark-mode .greeting, 
+body.dark-mode .subtitle {
+    color: #ffffff;
 }
-Use code with caution.
+
+body.dark-mode #theme-toggle {
+    background-color: #ffffff;
+    color: #000000;
+}
